@@ -1,0 +1,12 @@
+language: go
+go:
+  - "1.10"
+os:
+  - linux
+  - osx
+  - windows
+
+addons:
+  apt:
+    packages:
+    - libgtk-3-dev

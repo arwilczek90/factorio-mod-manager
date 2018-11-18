@@ -1,2 +1,2 @@
 # factorio-mod-manager
-A mod manager for factorio so you can have default profiles. 
+A mod manager for factorio so you can have multiple profiles.
