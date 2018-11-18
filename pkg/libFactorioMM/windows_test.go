@@ -8,10 +8,12 @@ import (
 )
 
 func TestSymlink(t *testing.T) {
+	file1 := "tmp1"
+	file2 := "tmp2"
 	input := []byte("hello\ngo\n")
-	errWrite := ioutil.WriteFile("/tmp/dat1", input, 0644)
-	symlink("/tmp/dat1", "/tmp/dat2")
-	out, errRead := ioutil.ReadFile("/tmp/dat2")
+	errWrite := ioutil.WriteFile(file1, input, 0644)
+	symlink(file1, file2)
+	out, errRead := ioutil.ReadFile(file2)
 	if errWrite != nil {
 		t.Error("Error writing to files test bad")
 	}
