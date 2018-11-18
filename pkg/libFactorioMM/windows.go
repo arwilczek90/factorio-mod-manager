@@ -2,6 +2,10 @@
 
 package libFactorioMM
 
+import (
+	"os"
+)
+
 func symlink(target string, destination string) {
 	os.Symlink(target, destination)
 }
